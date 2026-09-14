@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Aizlyn 🤍</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #050505;
+            color: #f0f0f0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+            padding: 40px 20px;
+        }
+
+        /* Ambient background glow */
+        body::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, rgba(0,0,0,0) 70%);
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        .container {
+            background: #111113;
+            border: 1px solid #222;
+            padding: 50px 40px;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 550px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.9);
+            z-index: 10;
+            text-align: center;
+            animation: fadeIn 1.2s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .sparkle {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #ffb6c1;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        .greetings-box {
+            background: #18181c;
+            border: 1px solid #2a2a30;
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .greetings-box p {
+            color: #b0b0b5;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .greetings-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .continue-btn {
+            width: 100%;
+            padding: 14px;
+            background: #f0f0f0;
+            color: #000;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.1s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(255,255,255,0.1);
+        }
+
+        .continue-btn:hover {
+            background: #ffffff;
+            box-shadow: 0 6px 20px rgba(255,255,255,0.2);
+        }
+
+        .continue-btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sparkle">✨ 🤍 ✨</div>
+        <h1>Happy Birthday, Aizlyn</h1>
+        
+        <div class="greetings-box">
+            <p>Wishing you a day filled with all the happiness, warmth, and smiles you bring to everyone around you. May this year ahead bring you closer to all your dreams, countless cozy moments, and all the success you deserve.</p>
+            <p>I hope your special day treats you wonderfully—because you more than deserve the absolute best.</p>
+        </div>
+
+        <!-- You can change 'next-page.html' later to whatever filename you want for your deeper letter page -->
+        <button class="continue-btn" onclick="location.href='next-page.html'">Click to Continue ➔</button>
+    </div>
+
+</body>
+</html>
