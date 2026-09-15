@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumo Codex // Entry 1022</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #050505;
+            color: #f0f0f0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(255,182,193,0.03) 0%, rgba(0,0,0,0) 70%);
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        .codex-container {
+            background: #111113;
+            border: 1px solid #222;
+            padding: 45px 40px;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 650px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.9);
+            z-index: 10;
+            animation: fadeIn 1.2s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .codex-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #222;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            font-size: 0.85rem;
+            color: #666;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .art-frame {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #2a2a30;
+            margin-bottom: 25px;
+            background: #000;
+        }
+
+        .art-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .entry-title {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .letter-body {
+            color: #b0b0b5;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .letter-body p {
+            margin-bottom: 15px;
+        }
+
+        .signature {
+            margin-top: 30px;
+            font-style: italic;
+            color: #ffb6c1;
+            text-align: right;
+            font-size: 0.95rem;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 25px;
+            color: #888;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+        }
+
+        .back-btn:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="codex-container">
+        <div class="codex-header">
+            <span>Kumo Codex // Archive Log</span>
+            <span>Entry 1022</span>
+        </div>
+
+        <div class="art-frame">
+            <!-- Make sure to name your uploaded art file 'art.png' or change the src below to match your filename! -->
+            <img src="Untitled270_20260708165127.png" alt="Aizlyn and Clover artwork">
+        </div>
+
+        <div class="entry-title">"Where the Multiverse Quiet Down"</div>
+
+        <div class="letter-body">
+            <p>I used to think that to be a great traveler—to survive the weight of infinite realities and endless variables—meant constantly moving forward, calculating the next objective, and winning every single unseen battle against the rot of the cosmos.</p>
+            
+            <p>I’ve crossed timelines where the stars themselves burned out, carrying the echoes of a thousand versions of myself. But none of those infinite paths ever mattered quite like this one.</p>
+            
+            <p>Sitting right here under the shade of the trees with you, with the quiet rustle of the leaves and the absolute peace of just <em>being</em>... I think I’ve finally found what actually matters. Out of all the universes I've ever drifted through, this is the only timeline I ever want to stay in.</p>
+            
+            <p>Happy Birthday, Avy. Thank you for being my favorite constant.</p>
+        </div>
+
+        <div class="signature">
+            — Clover L. Kumo
+        </div>
+
+        <a href="main-content.html" class="back-btn">← Back to Welcome</a>
+    </div>
+
+</body>
+</html>
